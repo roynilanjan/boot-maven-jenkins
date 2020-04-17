@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     stages {
-:x!
+
 
         stage ('Build Stage') {
             steps {
