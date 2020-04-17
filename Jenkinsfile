@@ -3,10 +3,11 @@ pipeline {
     agent any
 
     stages {
+:x!
 
         stage ('Build Stage') {
             steps {
-                withMaven(maven: 'Maven 3.6.1') {
+                 {
                     sh 'mvn clean install'
                 }
             }
