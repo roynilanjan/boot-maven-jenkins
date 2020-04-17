@@ -6,19 +6,13 @@ pipeline {
 
         stage ('Build Stage') {
             steps {
-                withMaven(maven: 'Maven 3.5.2') {
-                    sh 'mvn clean package'
+                withMaven(maven: 'Maven 3.6.1') {
+                    sh 'mvn clean install'
                 }
             }
         }
 
-        stage ('Test Stage') {
-                    steps {
-                        withMaven(maven: 'Maven 3.5.2') {
-                            sh 'mvn test'
-                        }
-                    }
-                }
+
 
         stage ('Deploy Stage') {
             steps {
