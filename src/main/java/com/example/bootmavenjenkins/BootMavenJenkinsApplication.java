@@ -14,7 +14,7 @@ public class BootMavenJenkinsApplication {
 	}
 	@GetMapping("/")
 	public String sayHello(){
-		return "Hi from maven Cloudbees Jenkins";
+		return "Hi from  Jenkins";
 	}
 
 }
