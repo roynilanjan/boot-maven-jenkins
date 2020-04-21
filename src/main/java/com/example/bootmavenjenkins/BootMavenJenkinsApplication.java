@@ -14,7 +14,7 @@ public class BootMavenJenkinsApplication {
 	}
 	@GetMapping("/")
 	public String sayHello(){
-		return "Hi from Local Jenkins";
+		return "Hi from PCF";
 	}
 
 }
