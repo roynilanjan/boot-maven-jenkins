@@ -14,7 +14,7 @@ public class BootMavenJenkinsApplication {
 	}
 	@GetMapping("/")
 	public String sayHello(){
-		return "Hi from PCF";
+		return "Hello from cloud foundry";
 	}
 
 }
